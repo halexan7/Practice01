@@ -19,7 +19,12 @@ public class LettersAndWords {
             for (int j = rev.get(x).length(); j > 0; j--){
                 temp += rev.get(x).charAt(j-1);
             }
-            System.out.print(temp + " ");
+            reverse.add(temp);
+            if (x == rev.size()- 1){
+                    for (int j = reverse.size() - 1; j > -1; j--) {
+                        System.out.print(reverse.get(j) + " ");
+                    }
+            }
         }
     }
 }
