@@ -27,7 +27,6 @@ public class VowelsAndConsonants {
                     count++;
                 }
             }
-
         }
         return count;
     }
